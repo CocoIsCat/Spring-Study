@@ -16,4 +16,4 @@
 
 ### 1. 스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술
 - 강의 수강용 repo : [spring-hello](https://github.com/CocoIsCat/Spring-Study/tree/main/%EA%B0%95%EC%9D%98%20%EC%A7%84%ED%96%89/Spring-Hello)
-- 복습용 repo : [spring-mvc]()
+- 복습용 repo : [spring-hello-self](https://github.com/CocoIsCat/Spring-Study/tree/main/%EB%B3%B5%EC%8A%B5/spring-hello-self)
