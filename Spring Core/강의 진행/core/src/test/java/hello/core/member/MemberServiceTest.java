@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class MemberServiceTest {
 
+    //MemberService memberService = new MemberServiceImpl();
     MemberService memberService;
 
     @BeforeEach
@@ -14,7 +15,6 @@ class MemberServiceTest {
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();
     }
-    //MemberService memberService = new MemberServiceImpl();
     @Test
     void join() {
         //given
