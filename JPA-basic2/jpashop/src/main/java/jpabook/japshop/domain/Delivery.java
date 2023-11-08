@@ -6,24 +6,21 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Member {
+public class Delivery {
     @Id
-    @Column(name = "MEMBER_ID")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
-    private String name;
+
+    @OneToOne(mappedBy = "delivery")
+    private Order order;
     private String city;
     private String street;
-    private String zipcode;
-
-    @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<>();
+    private String zipCode;
+    private DeliveryStatus deliveryStatus;
 }
